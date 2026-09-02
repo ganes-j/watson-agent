@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Watson Agent</title>
+<style>
+  :root { --bg:#ffffff; --fg:#1a1a1a; --muted:#5a5a5a; --line:#e2e2e2; --link:#0b5cad; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#131313; --fg:#ededed; --muted:#a3a3a3; --line:#2e2e2e; --link:#7ab5f0; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; }
+  main { max-width:44rem; margin:0 auto; padding:3rem 1.25rem 4rem; }
+  h1 { font-size:1.75rem; margin:0 0 .25rem; letter-spacing:-.01em; }
+  .sub { color:var(--muted); margin:0 0 2.5rem; }
+  h2 { font-size:1.05rem; margin:2.25rem 0 .5rem; }
+  p, li { color:var(--fg); }
+  ul { padding-left:1.25rem; }
+  a { color:var(--link); }
+  code { background:rgba(128,128,128,.14); padding:.1em .35em; border-radius:3px; font-size:.9em; }
+  footer { margin-top:3rem; padding-top:1.25rem; border-top:1px solid var(--line);
+           color:var(--muted); font-size:.9rem; }
+  footer a { margin-right:1rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Watson Agent</h1>
+  <p class="sub">A private automation assistant, operated by one person for their own accounts.</p>
+
+  <h2>What this is</h2>
+  <p>Watson Agent is a personal software assistant. It runs on hardware owned by its operator. It reads the operator's own Google mailboxes and calendars so it can answer the operator's questions about them.</p>
+
+  <h2>Who can use it</h2>
+  <p>Watson Agent has one user: its operator. It is not offered to the public. It has no sign-up, no accounts, and no customers.</p>
+
+  <h2>What it accesses</h2>
+  <p>Watson Agent requests read-only access to Google account data through two scopes:</p>
+  <ul>
+    <li><code>gmail.readonly</code> for reading mail</li>
+    <li><code>calendar.readonly</code> for reading calendar events</li>
+  </ul>
+  <p>Watson Agent cannot send, delete, or change anything in a Google account. The read-only scopes make those actions impossible, not merely forbidden.</p>
+
+  <h2>Documents</h2>
+  <p>Read the <a href="privacy.html">Privacy Policy</a> and the <a href="terms.html">Terms of Service</a>.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:watson.agenthelper@gmail.com">watson.agenthelper@gmail.com</a></p>
+
+  <footer>
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+  </footer>
+</main>
+</body>
+</html>
